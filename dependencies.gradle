@@ -1,0 +1,12 @@
+project.ext {
+    gdxVersion = "1.9.13"
+    jUnitVersion = "4.12"
+
+    jDearImguiVersion = "1.0.0-SNAPSHOT"
+    jDearImguiLayoutVersion = "1.0.0-SNAPSHOT"
+    jDearImguiGdxVersion = "1.0.0-SNAPSHOT"
+    jDearImguiGdxFrameViewportVersion = "1.0.0-SNAPSHOT"
+    gdxFrameViewportVersion = "1.0.0-SNAPSHOT"
+
+    engineVersion = "1.0.0-SNAPSHOT"
+}
