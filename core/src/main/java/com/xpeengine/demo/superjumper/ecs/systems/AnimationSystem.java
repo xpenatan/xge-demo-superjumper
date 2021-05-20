@@ -7,7 +7,7 @@ import com.xpeengine.core.ecs.components.XpeComponentMapper;
 import com.xpeengine.core.ecs.entities.XpeEntity;
 import com.xpeengine.core.ecs.systems.XpeEntitySystem;
 import com.xpeengine.core.ecs.systems.XpeEntitySystemBase;
-import com.xpeengine.ecs.components.XpeAnimation2DComponent;
+import com.xpeengine.core.content.ecs.components.XpeAnimation2DComponent;
 
 public class AnimationSystem implements XpeEntitySystem {
 

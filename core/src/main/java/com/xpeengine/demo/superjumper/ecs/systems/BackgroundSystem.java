@@ -8,8 +8,8 @@ import com.xpeengine.core.ecs.entities.XpeEntity;
 import com.xpeengine.core.ecs.systems.XpeSystem;
 import com.xpeengine.core.ecs.systems.XpeSystemBase;
 import com.xpeengine.core.transform.XpeTransform;
-import com.xpeengine.ecs.components.XpeEntityTransformComponent;
-import com.xpeengine.ecs.components.XpeGameCameraComponent;
+import com.xpeengine.core.content.ecs.components.XpeEntityTransformComponent;
+import com.xpeengine.core.content.ecs.components.XpeGameCameraComponent;
 import com.xpenatan.lists.XpeImmutableIntLinkedHashMap;
 import com.xpenatan.lists.nodes.XpeIntLinkedHashMapNode;
 

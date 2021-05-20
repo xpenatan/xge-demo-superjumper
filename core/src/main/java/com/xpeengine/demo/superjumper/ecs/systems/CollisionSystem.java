@@ -9,7 +9,7 @@ import com.xpeengine.core.ecs.systems.XpeSystem;
 import com.xpeengine.core.ecs.systems.XpeSystemBase;
 import com.xpeengine.core.managers.XpeEntityManager;
 import com.xpeengine.core.managers.XpeMatcherManager;
-import com.xpeengine.ecs.components.XpeEntityTransformComponent;
+import com.xpeengine.core.content.ecs.components.XpeEntityTransformComponent;
 import com.xpenatan.lists.XpeImmutableIntLinkedHashMap;
 import com.xpenatan.lists.nodes.XpeIntLinkedHashMapNode;
 

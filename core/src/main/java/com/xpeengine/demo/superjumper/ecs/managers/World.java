@@ -3,7 +3,7 @@ package com.xpeengine.demo.superjumper.ecs.managers;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
-import com.xpeengine.ecs.components.*;
+import com.xpeengine.core.content.ecs.components.*;
 import com.xpeengine.demo.superjumper.SceneKeys;
 import com.xpeengine.demo.superjumper.ecs.components.*;
 import com.xpeengine.demo.superjumper.ecs.systems.*;
@@ -15,7 +15,7 @@ import com.xpeengine.core.managers.XpeEntityManager;
 import com.xpeengine.core.managers.XpeEventManager;
 import com.xpeengine.core.managers.XpeSystemManager;
 import com.xpeengine.core.scene.XpeScene;
-import com.xpeengine.ecs.components.utils.XpeAnimation;
+import com.xpeengine.core.content.ecs.components.utils.XpeAnimation;
 
 import java.util.Random;
 

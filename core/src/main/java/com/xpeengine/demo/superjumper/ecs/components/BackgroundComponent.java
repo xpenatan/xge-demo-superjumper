@@ -1,7 +1,7 @@
 package com.xpeengine.demo.superjumper.ecs.components;
 
 import com.xpeengine.core.ecs.components.XpeComponent;
-import com.xpeengine.ui.autobind.AutoUIAnnotation;
+import com.xpeengine.core.ui.autobind.AutoUIAnnotation;
 
 @AutoUIAnnotation.XpeAutoClassBind(aliasName = "BackgroundComponent",
         groupNames = { "Game", "Main" }, groupType = AutoUIAnnotation.GroupType.CUSTOM)

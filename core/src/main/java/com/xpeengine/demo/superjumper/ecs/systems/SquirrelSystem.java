@@ -10,7 +10,7 @@ import com.xpeengine.core.ecs.entities.XpeEntity;
 import com.xpeengine.core.ecs.systems.XpeEntitySystem;
 import com.xpeengine.core.ecs.systems.XpeEntitySystemBase;
 import com.xpeengine.core.transform.XpeTransform;
-import com.xpeengine.ecs.components.XpeEntityTransformComponent;
+import com.xpeengine.core.content.ecs.components.XpeEntityTransformComponent;
 
 public class SquirrelSystem implements XpeEntitySystem {
 

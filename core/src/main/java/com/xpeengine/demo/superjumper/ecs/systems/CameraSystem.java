@@ -10,9 +10,9 @@ import com.xpeengine.core.ecs.entities.XpeEntity;
 import com.xpeengine.core.ecs.systems.XpeEntitySystem;
 import com.xpeengine.core.ecs.systems.XpeEntitySystemBase;
 import com.xpeengine.core.transform.XpeTransform;
-import com.xpeengine.ecs.components.XpeAnimation2DComponent;
-import com.xpeengine.ecs.components.XpeEntityTransformComponent;
-import com.xpeengine.ecs.components.XpeGameCameraComponent;
+import com.xpeengine.core.content.ecs.components.XpeAnimation2DComponent;
+import com.xpeengine.core.content.ecs.components.XpeEntityTransformComponent;
+import com.xpeengine.core.content.ecs.components.XpeGameCameraComponent;
 import com.xpenatan.lists.XpeImmutableIntLinkedHashMap;
 
 public class CameraSystem implements XpeEntitySystem {
