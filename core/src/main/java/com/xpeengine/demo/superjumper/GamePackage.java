@@ -1,6 +1,7 @@
 package com.xpeengine.demo.superjumper;
 
 import com.xpeengine.core.content.ecs.managers.*;
+import com.xpeengine.core.io.metadata.XpeMetaClass;
 import com.xpeengine.demo.superjumper.ecs.components.ActionBox;
 import com.xpeengine.demo.superjumper.ecs.components.BackgroundComponent;
 import com.xpeengine.demo.superjumper.ecs.managers.World;
@@ -15,11 +16,17 @@ public class GamePackage implements XpeEnginePackage {
     @Override
     public void init(XpeEngine engine) {
         XpeClassManager classManager = engine.getClassManager();
+        XpeMetaClass metaClass = null;
 
-        classManager.registerClass(1, ActionBox.class);
-        classManager.registerClass(2, BackgroundComponent.class);
+        metaClass = classManager.registerClass(1, ActionBox.class);
+        metaClass.setName("ActionBox");
+        metaClass.setMetaClassGroup("Game", "Gui");
 
-        classManager.registerClass(4, XpeSpriteBatchManager.class, Xpe2DManager.class);
+        metaClass = classManager.registerClass(2, BackgroundComponent.class);
+        metaClass.setName("BackgroundComponent");
+        metaClass.setMetaClassGroup("Game", "Main");
+
+        metaClass = classManager.registerClass(4, XpeSpriteBatchManager.class, Xpe2DManager.class);
     }
 
     @Override
