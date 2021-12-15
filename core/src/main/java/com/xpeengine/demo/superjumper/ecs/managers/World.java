@@ -48,7 +48,7 @@ public class World implements XpeManager {
     public void onAttach(XpeEngine engine) {
         this.engine = engine;
 
-        engine.getEventManager().addEventListener(XpeEngineEvents.FINISH_SCENE_LOADING, new XpeEventListener() {
+        engine.getEventManager().addEventListener(XpeEngineEvents.END_LOAD_SCENE, new XpeEventListener() {
             @Override
             public void onEvent(XpeEvent event) {
                 XpeScene currentScene = engine.getSceneManager().getCurrentScene();

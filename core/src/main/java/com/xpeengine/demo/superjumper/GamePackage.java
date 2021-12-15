@@ -13,6 +13,16 @@ import com.xpeengine.demo.superjumper.ecs.systems.*;
 
 public class GamePackage implements XpeEnginePackage {
     @Override
+    public void init(XpeEngine engine) {
+        XpeClassManager classManager = engine.getClassManager();
+
+        classManager.registerClass(1, ActionBox.class);
+        classManager.registerClass(2, BackgroundComponent.class);
+
+        classManager.registerClass(4, XpeSpriteBatchManager.class, Xpe2DManager.class);
+    }
+
+    @Override
     public void onCreate(XpeEngine engine) {
 
         engine.addManager(World.class, new World());
@@ -56,13 +66,5 @@ public class GamePackage implements XpeEnginePackage {
         }));
 
         engine.getSceneManager().loadSceneFromFile("scene/main");
-    }
-
-    @Override
-    public void registerClass(XpeClassManager classManager) {
-        classManager.registerClass(1, ActionBox.class);
-        classManager.registerClass(2, BackgroundComponent.class);
-
-        classManager.registerClass(4, XpeSpriteBatchManager.class, Xpe2DManager.class);
     }
 }
