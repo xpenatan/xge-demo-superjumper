@@ -28,12 +28,10 @@ public class BackgroundSystem implements XpeSystem {
 
         backgroundList = engine.getMatcherManager().getEntities(backgroundMatcher);
         cameraList = engine.getMatcherManager().getEntities(cameraMatcher);
-
     }
 
     @Override
     public void onDetach(XpeSystemBase xpeSystemBase) {
-
     }
 
     @Override

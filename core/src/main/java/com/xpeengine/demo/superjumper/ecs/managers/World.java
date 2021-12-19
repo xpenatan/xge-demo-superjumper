@@ -117,6 +117,7 @@ public class World implements XpeManager {
     }
 
     private void generateLevel () {
+        createGameBackGround();
         float y = PlatformComponent.HEIGHT / 2;
         float maxJumpHeight = BobComponent.JUMP_VELOCITY * BobComponent.JUMP_VELOCITY / (2 * -gravity.y);
         while (y < WORLD_HEIGHT - WORLD_WIDTH / 2) {
@@ -160,6 +161,7 @@ public class World implements XpeManager {
         StateComponent state = entity.attachComponent(new StateComponent());
 
         spriteComponent.setTexturePath("data/items.png");
+        spriteComponent.setSortOrder(1);
 
         animationComponent.setState(BobComponent.STATE_JUMP);
 
@@ -180,8 +182,8 @@ public class World implements XpeManager {
         bobHitAnimation.setFrameDuration(0.2f);
         bobHitAnimation.setPlayMode(Animation.PlayMode.LOOP);
 
+        transformComponent.set2D(true);
         transformComponent.getTransform().setPosition(5.0f, 1.0f, 0.0f);
-
 
         bounds.bounds.width = BobComponent.WIDTH;
         bounds.bounds.height = BobComponent.HEIGHT;
@@ -204,6 +206,7 @@ public class World implements XpeManager {
         XpeEntityTransformComponent position = entity.attachComponent(new XpeEntityTransformComponent());
         StateComponent state = entity.attachComponent(new StateComponent());
 
+        position.set2D(true);
         spriteComponent.setTexturePath("data/items.png");
 
         animationComponent.addTextureRegion(PlatformComponent.STATE_NORMAL, 64, 160, 64, 16);
@@ -223,8 +226,6 @@ public class World implements XpeManager {
         bounds.bounds.height = PlatformComponent.HEIGHT;
 
         position.getTransform().setPosition(x, y, 0);
-        //TODO
-//        position.getTransform().setSize(2.0f, 0.5f, 0.3f);
 
         state.set(PlatformComponent.STATE_NORMAL);
 
@@ -248,6 +249,7 @@ public class World implements XpeManager {
         BoundsComponent bounds = entity.attachComponent(new BoundsComponent());
         XpeEntityTransformComponent position = entity.attachComponent(new XpeEntityTransformComponent());
 
+        position.set2D(true);
         spriteComponent.setSortOrder(3);
         spriteComponent.setTexturePath("data/items.png");
 
@@ -289,6 +291,7 @@ public class World implements XpeManager {
         bounds.bounds.width = SquirrelComponent.WIDTH;
         bounds.bounds.height = SquirrelComponent.HEIGHT;
 
+        position.set2D(true);
         position.getTransform().setPosition(x, y, 0.0f);
 
         state.set(SquirrelComponent.STATE_NORMAL);
@@ -323,6 +326,7 @@ public class World implements XpeManager {
         bounds.bounds.width = CoinComponent.WIDTH;
         bounds.bounds.height = CoinComponent.HEIGHT;
 
+        position.set2D(true);
         position.getTransform().setPosition(x, y, 0.0f);
 
         state.set(CoinComponent.STATE_NORMAL);
@@ -347,7 +351,27 @@ public class World implements XpeManager {
         spriteComponent.setTexturePath("data/items.png");
         spriteComponent.setRegion(128, 64, 64, 64);
 
+        position.set2D(true);
         position.getTransform().setPosition(x, y, 2.0f);
+
+        entityManager.attachEntity(entity);
+    }
+
+    private void createGameBackGround() {
+        XpeEntityManager entityManager = engine.getEntityManager();
+        XpeEntity entity = entityManager.createEntity(false);
+        entity.setName("Game Background");
+
+        XpeAABBComponent aabbComponent = entity.attachComponent(new XpeAABBComponent());
+        XpeSpriteComponent spriteComponent = entity.attachComponent(new XpeSpriteComponent());
+        BackgroundComponent backgroundComponent = entity.attachComponent(new BackgroundComponent());
+        XpeEntityTransformComponent position = entity.attachComponent(new XpeEntityTransformComponent());
+
+        position.set2D(true);
+        spriteComponent.setTexturePath("data/background.png");
+        spriteComponent.setRegion(0, 0, 320, 480);
+        spriteComponent.offsetX = 0.5f;
+        spriteComponent.offsetY = 0.5f;
 
         entityManager.attachEntity(entity);
     }
