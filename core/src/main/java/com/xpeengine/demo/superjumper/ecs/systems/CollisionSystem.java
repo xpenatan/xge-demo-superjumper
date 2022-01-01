@@ -1,5 +1,6 @@
 package com.xpeengine.demo.superjumper.ecs.systems;
 
+import com.xpeengine.content.ecs.components.XpeEntityTransformComponent;
 import com.xpeengine.demo.superjumper.ecs.managers.World;
 import com.xpeengine.demo.superjumper.ecs.components.*;
 import com.xpeengine.core.XpeEngine;
@@ -9,7 +10,6 @@ import com.xpeengine.core.ecs.systems.XpeSystem;
 import com.xpeengine.core.ecs.systems.XpeSystemBase;
 import com.xpeengine.core.managers.XpeEntityManager;
 import com.xpeengine.core.managers.XpeMatcherManager;
-import com.xpeengine.core.content.ecs.components.XpeEntityTransformComponent;
 import com.xpenatan.lists.XpeImmutableIntLinkedHashMap;
 import com.xpenatan.lists.nodes.XpeIntLinkedHashMapNode;
 

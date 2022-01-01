@@ -4,6 +4,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.math.collision.Ray;
 import com.badlogic.gdx.utils.Array;
+import com.xpeengine.content.ecs.components.XpeAABBComponent;
+import com.xpeengine.content.ecs.components.gui.XpeGuiEntityTransformComponent;
 import com.xpeengine.core.matcher.XpeObjectMatcherBuilder;
 import com.xpeengine.demo.superjumper.SceneKeys;
 import com.xpeengine.demo.superjumper.ecs.components.ActionBox;
@@ -17,8 +19,6 @@ import com.xpeengine.core.ecs.systems.XpeSystemBase;
 import com.xpeengine.core.ecs.systems.XpeSystemType;
 import com.xpeengine.core.math.aabb.XpeAABBTreeNode;
 import com.xpeengine.core.scene.XpeScene;
-import com.xpeengine.core.content.ecs.components.XpeAABBComponent;
-import com.xpeengine.core.content.ecs.components.gui.XpeGuiEntityTransformComponent;
 import com.xpenatan.lists.XpeImmutableIntLinkedHashMap;
 
 public class InputGuiSystem implements XpeSystem {

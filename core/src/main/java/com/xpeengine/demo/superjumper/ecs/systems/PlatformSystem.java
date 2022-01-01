@@ -1,5 +1,7 @@
 package com.xpeengine.demo.superjumper.ecs.systems;
 
+import com.xpeengine.content.ecs.components.XpeAnimation2DComponent;
+import com.xpeengine.content.ecs.components.XpeEntityTransformComponent;
 import com.xpeengine.core.matcher.XpeObjectMatcher;
 import com.xpeengine.demo.superjumper.ecs.managers.World;
 import com.xpeengine.demo.superjumper.ecs.components.MovementComponent;
@@ -11,8 +13,6 @@ import com.xpeengine.core.ecs.entities.XpeEntity;
 import com.xpeengine.core.ecs.systems.XpeEntitySystem;
 import com.xpeengine.core.ecs.systems.XpeEntitySystemBase;
 import com.xpeengine.core.transform.XpeTransform;
-import com.xpeengine.core.content.ecs.components.XpeAnimation2DComponent;
-import com.xpeengine.core.content.ecs.components.XpeEntityTransformComponent;
 
 public class PlatformSystem implements XpeEntitySystem {
 

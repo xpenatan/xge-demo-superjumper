@@ -1,6 +1,12 @@
 package com.xpeengine.demo.superjumper;
 
-import com.xpeengine.core.content.ecs.managers.*;
+import com.xpeengine.content.ecs.managers.Xpe2DManager;
+import com.xpeengine.content.ecs.managers.XpeSpriteBatchManager;
+import com.xpeengine.content.ecs.systems.XpeDynamicAABBSystem;
+import com.xpeengine.content.ecs.systems.XpeGameCameraSystem;
+import com.xpeengine.content.ecs.systems.XpeGuiRender2DSystem;
+import com.xpeengine.content.ecs.systems.XpeRender2DSystem;
+import com.xpeengine.content.ecs.systems.gui.XpeGuiCameraSystem;
 import com.xpeengine.core.io.metadata.XpeMetaClass;
 import com.xpeengine.demo.superjumper.ecs.components.ActionBox;
 import com.xpeengine.demo.superjumper.ecs.components.BackgroundComponent;
@@ -8,8 +14,6 @@ import com.xpeengine.demo.superjumper.ecs.managers.World;
 import com.xpeengine.core.XpeEngine;
 import com.xpeengine.core.XpeEnginePackage;
 import com.xpeengine.core.managers.XpeClassManager;
-import com.xpeengine.core.content.ecs.systems.*;
-import com.xpeengine.core.content.ecs.systems.gui.XpeGuiCameraSystem;
 import com.xpeengine.demo.superjumper.ecs.systems.*;
 
 public class GamePackage implements XpeEnginePackage {

@@ -1,5 +1,7 @@
 package com.xpeengine.demo.superjumper.ecs.systems;
 
+import com.xpeengine.content.ecs.components.XpeEntityTransformComponent;
+import com.xpeengine.content.ecs.components.XpeGameCameraComponent;
 import com.xpeengine.core.matcher.XpeObjectMatcher;
 import com.xpeengine.demo.superjumper.ecs.components.BackgroundComponent;
 import com.xpeengine.core.XpeEngine;
@@ -8,8 +10,6 @@ import com.xpeengine.core.ecs.entities.XpeEntity;
 import com.xpeengine.core.ecs.systems.XpeSystem;
 import com.xpeengine.core.ecs.systems.XpeSystemBase;
 import com.xpeengine.core.transform.XpeTransform;
-import com.xpeengine.core.content.ecs.components.XpeEntityTransformComponent;
-import com.xpeengine.core.content.ecs.components.XpeGameCameraComponent;
 import com.xpenatan.lists.XpeImmutableIntLinkedHashMap;
 import com.xpenatan.lists.nodes.XpeIntLinkedHashMapNode;
 

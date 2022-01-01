@@ -1,5 +1,6 @@
 package com.xpeengine.demo.superjumper.ecs.systems;
 
+import com.xpeengine.content.ecs.components.XpeEntityTransformComponent;
 import com.xpeengine.core.matcher.XpeObjectMatcher;
 import com.xpeengine.demo.superjumper.ecs.components.BoundsComponent;
 import com.xpeengine.core.XpeEngine;
@@ -8,7 +9,6 @@ import com.xpeengine.core.ecs.entities.XpeEntity;
 import com.xpeengine.core.ecs.systems.XpeEntitySystem;
 import com.xpeengine.core.ecs.systems.XpeEntitySystemBase;
 import com.xpeengine.core.transform.XpeTransform;
-import com.xpeengine.core.content.ecs.components.XpeEntityTransformComponent;
 
 public class BoundsSystem implements XpeEntitySystem {
 

@@ -1,5 +1,8 @@
 package com.xpeengine.demo.superjumper.ecs.systems;
 
+import com.xpeengine.content.ecs.components.XpeAnimation2DComponent;
+import com.xpeengine.content.ecs.components.XpeEntityTransformComponent;
+import com.xpeengine.content.ecs.components.XpeGameCameraComponent;
 import com.xpeengine.core.matcher.XpeObjectMatcher;
 import com.xpeengine.demo.superjumper.ecs.components.BobComponent;
 import com.xpeengine.demo.superjumper.ecs.components.MovementComponent;
@@ -10,9 +13,6 @@ import com.xpeengine.core.ecs.entities.XpeEntity;
 import com.xpeengine.core.ecs.systems.XpeEntitySystem;
 import com.xpeengine.core.ecs.systems.XpeEntitySystemBase;
 import com.xpeengine.core.transform.XpeTransform;
-import com.xpeengine.core.content.ecs.components.XpeAnimation2DComponent;
-import com.xpeengine.core.content.ecs.components.XpeEntityTransformComponent;
-import com.xpeengine.core.content.ecs.components.XpeGameCameraComponent;
 import com.xpenatan.lists.XpeImmutableIntLinkedHashMap;
 
 public class CameraSystem implements XpeEntitySystem {

@@ -9,7 +9,9 @@ import java.io.File;
 public class Build {
 
 	public static void main(String[] args) {
-		TeaReflectionSupplier.addReflectionClass("com.xpeengine.core.content.ecs.");
+		TeaReflectionSupplier.addReflectionClass("com.xpeengine.demo.superjumper.ecs.components");
+		TeaReflectionSupplier.addReflectionClass("com.xpeengine.core.ecs");
+		TeaReflectionSupplier.addReflectionClass("com.xpeengine.content.ecs");
 		TeaBuildConfiguration teaBuildConfiguration = new TeaBuildConfiguration();
 		teaBuildConfiguration.assetsPath.add(new File("../android/assets"));;
 		teaBuildConfiguration.webappPath = new File(".").getAbsolutePath();

@@ -1,6 +1,7 @@
 package com.xpeengine.demo.superjumper.ecs.systems;
 
 import com.badlogic.gdx.math.Vector2;
+import com.xpeengine.content.ecs.components.XpeEntityTransformComponent;
 import com.xpeengine.core.matcher.XpeObjectMatcher;
 import com.xpeengine.demo.superjumper.ecs.components.MovementComponent;
 import com.xpeengine.core.XpeEngine;
@@ -8,7 +9,6 @@ import com.xpeengine.core.ecs.components.XpeComponentMapper;
 import com.xpeengine.core.ecs.entities.XpeEntity;
 import com.xpeengine.core.ecs.systems.XpeEntitySystem;
 import com.xpeengine.core.ecs.systems.XpeEntitySystemBase;
-import com.xpeengine.core.content.ecs.components.XpeEntityTransformComponent;
 
 public class MovementSystem implements XpeEntitySystem {
     private final XpeComponentMapper<MovementComponent> movementMapper = XpeComponentMapper.create(MovementComponent.class);
