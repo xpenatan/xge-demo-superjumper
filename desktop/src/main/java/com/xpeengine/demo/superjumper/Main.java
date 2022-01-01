@@ -11,6 +11,6 @@ public class Main {
         config.height = 640;
         config.title = "ID 0";
         config.vSyncEnabled = true;
-        new LwjglApplication(new XpeEngineApp(GamePackage.class), config);
+        new LwjglApplication(new MainGame(), config);
     }
 }

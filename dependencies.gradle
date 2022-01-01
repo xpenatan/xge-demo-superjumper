@@ -1,12 +1,9 @@
 project.ext {
     gdxVersion = "1.10.0"
-    jUnitVersion = "4.12"
 
-    jDearImguiVersion = "1.0.0-SNAPSHOT"
-    jDearImguiLayoutVersion = "1.0.0-SNAPSHOT"
-    jDearImguiGdxVersion = "1.0.0-SNAPSHOT"
-    jDearImguiGdxFrameViewportVersion = "1.0.0-SNAPSHOT"
-    gdxFrameViewportVersion = "1.0.0-SNAPSHOT"
+    htmlWebToolsVersion = "1.0.0-SNAPSHOT"
+//    htmlWebToolsTeaVMVersion = "1.0.0-ALL-SNAPSHOT"
+    htmlWebToolsTeaVMVersion = "1.0.0-SNAPSHOT"
 
     engineVersion = "1.0.0-SNAPSHOT"
 }
