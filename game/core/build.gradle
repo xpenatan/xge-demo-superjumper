@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+}
+apply from: '../dependencies.gradle'
+
+compileJava {
+    sourceCompatibility JavaVersion.VERSION_1_8.toString()
+    targetCompatibility JavaVersion.VERSION_1_8.toString()
+}
+
+dependencies {
+    implementation "com.badlogicgames.gdx:gdx:$project.gdxVersion"
+
+    api "com.xpeengine:core:$project.engineVersion"
+    implementation "com.xpeengine:bullet:$project.engineVersion"
+}

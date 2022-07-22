@@ -1,0 +1,36 @@
+plugins {
+  id 'java'
+  id 'java-library'
+  id "org.gretty" version "3.0.6"
+}
+
+apply from: '../dependencies.gradle'
+
+compileJava {
+  sourceCompatibility JavaVersion.VERSION_1_8.toString()
+  targetCompatibility JavaVersion.VERSION_1_8.toString()
+}
+
+gretty {
+  servletContainer = 'jetty9'
+  extraResourceBase 'webapp'
+}
+
+sourceSets.main.java.srcDirs = ["src/main/java/"]
+project.ext.mainClassName = "com.xpeengine.demo.superjumper.TeaVMBuild"
+
+dependencies {
+  implementation "com.github.xpenatan.gdx-web-tools:backend-web:1.0.0-SNAPSHOT"
+  implementation "com.github.xpenatan.gdx-web-tools:backend-teavm:1.0.0-SNAPSHOT"
+  implementation "com.github.xpenatan.gdx-web-tools:backend-teavm-native:1.0.0-SNAPSHOT"
+  implementation "com.badlogicgames.gdx:gdx:$project.gdxVersion"
+  implementation project(":game:core")
+}
+
+task buildJavaScript(dependsOn: classes, type: JavaExec) {
+  group = 'teavm'
+  description = 'Run core example'
+
+  main = project.mainClassName
+  classpath = sourceSets.main.runtimeClasspath
+}

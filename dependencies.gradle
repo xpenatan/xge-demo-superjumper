@@ -1,9 +1,0 @@
-project.ext {
-    gdxVersion = "1.10.0"
-
-    htmlWebToolsVersion = "1.0.0-SNAPSHOT"
-//    htmlWebToolsTeaVMVersion = "1.0.0-ALL-SNAPSHOT"
-    htmlWebToolsTeaVMVersion = "1.0.0-SNAPSHOT"
-
-    engineVersion = "1.0.0-SNAPSHOT"
-}

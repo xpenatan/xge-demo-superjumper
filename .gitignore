@@ -27,5 +27,6 @@ local.properties
 .settings
 out/
 *.ini
-*.jar
-webapp
+**/webapp/**
+/repo
+**/libs
